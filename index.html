@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Momentum Clone</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="space-video">
+      <source src="mp4/space.mp4" type="video/mp4" />
+    </video>
+
+    <div class="top">
+      <div class="search">
+        <div class="searchbox">
+          <img src="img/search.png" alt="search bar icon" id="search-icon" />
+          <form id="search-form">
+            <input type="text" id="" class="search-input" />
+          </form>
+          <img
+            src="img/google.png"
+            alt="google icon"
+            class=""
+            id="google-icon"
+          />
+        </div>
+      </div>
+      <div class="weather hidden">
+        <div>
+          <img src="" alt="weather icon" class="icon2" id="weather-icon" />
+          <span class="weather-degree">23&deg;</span><br />
+          <span class="weather-city">Namhyang-dong</span>
+        </div>
+      </div>
+    </div>
+    <div class="empty-top"></div>
+    <div class="main">
+      <span class="time">6:00</span>
+      <span class="greeting"
+        >Welcome to Dadentum!<br />Please enter your name below.</span
+      >
+      <input class="name-input hidden" />
+      <div class="todo">
+        <span class="todo-span">What is your main focus for today?</span>
+        <input type="text" class="todo-input" />
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="bottom-left">
+        <img
+          src="img/settings.png"
+          alt="settings icon"
+          id="settings-icon"
+          class="icon"
+        />
+        <span class="location">Somewhere, Space</span>
+      </div>
+      <span class="quote">"Be the one who decided to go for it"</span>
+      <span class="todo-bottom">Todo</span>
+    </div>
+
+    <!-- Should've employed modules... -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
+      integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="search.js"></script>
+    <script src="weather.js"></script>
+    <script src="time.js"></script>
+    <script src="greeting.js"></script>
+    <script src="quote.js"></script>
+    <script src="todos.js"></script>
+  </body>
+</html>
